@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.progress-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 16px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    background-color: #58cc02;
+    transition: width 0.3s ease;
+}
+
+.quiz-section h2 {
+    font-size: 24px;
+    color: #3c3c3c;
+    margin-bottom: 30px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.option {
+    padding: 15px;
+    border: 2px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: right;
+    transition: 0.1s;
+}
+
+.option:hover { background-color: #f7f7f7; }
+
+.option.selected {
+    background-color: #ddf4ff;
+    border-color: #1cb0f6;
+    color: #1cb0f6;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 20px 0;
+    border-top: 2px solid #e5e5e5;
+}
+
+#check-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #58cc02;
+    color: white;
+    border: none;
+    border-bottom: 4px solid #46a302;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* حالات الإجابة */
+.footer.correct { background-color: #d7ffb8; border-color: #b8f28b; }
+.footer.wrong { background-color: #ffdfe0; border-color: #ffc1c1; }
